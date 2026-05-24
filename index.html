@@ -2,13 +2,46 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Kevin</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        p { font-size: 1.1rem; opacity: 0.9; }
+        .badge {
+            background: #ffcc00;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
-<body style="text-align: center; font-family: sans-serif; background-color: #f0f0f0; padding-top: 50px;">
-    <h1>Halo, Ini Website Pertama Kevin!</h1>
-    <p>Saya baru saja belajar cara membuat website lewat GitHub.</p>
-    <div style="background: white; padding: 20px; border-radius: 10px; display: inline-block; border: 1px solid #ccc;">
-        <p>Langkah selanjutnya: Belajar CSS!</p>
+<body>
+    <div class="container">
+        <div class="badge">Web Developer Mode: ON</div>
+        <h1>🚀 Website Kevin</h1>
+        <p>Gimana? Sekarang tampilannya lebih estetik kan!</p>
     </div>
 </body>
 </html>
