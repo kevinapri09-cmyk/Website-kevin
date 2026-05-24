@@ -3,125 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Kevin Aprillio</title>
+    <title>Website Kevin Aprillio</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background: #050510; /* Angkasa gelap */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+            background: #050510;
             color: white;
-        }
-
-        /* Efek Bintang Melayang */
-        .stars-container {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: 0;
-        }
-
-        .star {
-            position: absolute;
-            background: white;
-            border-radius: 50%;
-            opacity: 0.6;
-            animation: moveUp linear infinite;
-        }
-
-        @keyframes moveUp {
-            from { transform: translateY(100vh); }
-            to { transform: translateY(-100px); }
-        }
-
-        .container {
-            position: relative;
-            z-index: 1;
+            font-family: 'Segoe UI', sans-serif;
             text-align: center;
-            background: rgba(255, 255, 255, 0.08);
-            padding: 35px 25px;
-            border-radius: 30px;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            width: 85%;
-            max-width: 420px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-        }
-
-        h1 { font-size: 1.7rem; margin-bottom: 15px; color: #00d2ff; }
-        
-        .about-section {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 15px;
-            border-radius: 15px;
-            margin: 20px 0;
-            text-align: left;
-            border-left: 4px solid #ff00cc;
-        }
-
-        .about-section h2 { font-size: 1rem; margin-top: 0; color: #ff00cc; }
-        .about-section p { font-size: 0.85rem; margin-bottom: 0; opacity: 0.9; line-height: 1.6; }
-
-        .button-group {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            margin-top: 20px;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #001f3f, #050510);
+            width: 100%;
+        }
+
+        h1 { 
+            font-size: 2.2rem; 
+            margin-bottom: 10px; 
+            color: #00d2ff;
+            text-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+        }
+        
+        .profile-card {
+            margin: 20px auto; 
+            padding: 35px; 
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.03); 
+            border-radius: 30px; 
+            border: 1px solid rgba(0, 210, 255, 0.3); 
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(15px);
+            text-align: left;
+        }
+
+        .label { color: #00d2ff; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; margin-bottom: 5px; letter-spacing: 1px; }
+        .info { color: white; font-size: 1.15rem; margin-bottom: 20px; }
+
+        .nav-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            width: 80%;
+            max-width: 300px;
         }
 
         .btn {
-            padding: 14px;
-            border-radius: 15px;
+            padding: 15px 25px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
             transition: 0.3s;
-            font-size: 0.9rem;
+            text-align: center;
         }
 
-        .btn-gallery {
-            background: linear-gradient(45deg, #ff00cc, #3333ff);
-            color: white;
-            box-shadow: 0 5px 15px rgba(51, 51, 255, 0.3);
+        .btn-galeri { 
+            background: linear-gradient(45deg, #00d2ff, #3a7bd5); 
+            color: white; 
+            box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
+        }
+        
+        .btn-contact { 
+            background: transparent; 
+            color: #00d2ff; 
+            border: 2px solid #00d2ff;
         }
 
-        .btn-contact {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .btn:hover { transform: scale(1.05); }
+        .btn:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0, 210, 255, 0.5); }
     </style>
 </head>
 <body>
 
-    <div class="stars-container">
-        <div class="star" style="width:2px; height:2px; left:10%; animation-duration:8s;"></div>
-        <div class="star" style="width:3px; height:3px; left:30%; animation-duration:12s;"></div>
-        <div class="star" style="width:1px; height:1px; left:50%; animation-duration:10s;"></div>
-        <div class="star" style="width:2px; height:2px; left:70%; animation-duration:15s;"></div>
-        <div class="star" style="width:3px; height:3px; left:90%; animation-duration:9s;"></div>
-        <div class="star" style="width:2px; height:2px; left:25%; animation-duration:11s;"></div>
-        <div class="star" style="width:1px; height:1px; left:85%; animation-duration:14s;"></div>
+    <div class="header">
+        <h1>Selamat Datang di Website Saya<br>Kevin Aprillio</h1>
+        <p style="color: #aaa; letter-spacing: 2px;">TUGAS REVISI IT</p>
     </div>
 
-    <div class="container">
-        <h1>Halo, Kevin Aprillio! 👋</h1>
+    <div class="profile-card">
+        <h2 style="color: #00d2ff; text-align: center; margin-top: 0; border-bottom: 2px solid rgba(0,210,255,0.2); padding-bottom: 10px; letter-spacing: 2px;">ABOUT ME</h2>
         
-        <div class="about-section">
-            <h2>Tentang Saya</h2>
-            <p>Saya adalah seorang pelajar yang terkadang memfoto pemandangan alam. Saya membuat website ini untuk menampilkan hasil karya saya sekaligus belajar membuat website.</p>
+        <div style="margin-top: 20px;">
+            <div class="label">Nama Lengkap</div>
+            <div class="info">Kevin Aprillio</div>
+            
+            <div class="label">Asal & Kelahiran</div>
+            <div class="info">Tangerang Selatan, April 2009</div>
+
+            <div class="label">Hobi</div>
+            <div class="info" style="font-size: 1rem;">
+                🎮 Main Game <br>
+                🤝 Bermain Bersama Teman <br>
+                📸 Fotografi
+            </div>
         </div>
-        
-        <div class="button-group">
-            <a href="galeri.html" class="btn btn-gallery">🖼️ Lihat Galeri Pemandangan</a>
-            <a href="contact.html" class="btn btn-contact">📧 Hubungi Saya</a>
-        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="galeri.html" class="btn btn-galeri">LIHAT KOLEKSI FOTO</a>
+        <a href="contact.html" class="btn btn-contact">HUBUNGI SAYA</a>
     </div>
 
 </body>
