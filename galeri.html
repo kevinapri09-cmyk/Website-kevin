@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto - Kevin Aprillio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #050510;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+        }
+
+        /* Bintang melayang */
+        .stars-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+        }
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: moveUp linear infinite;
+        }
+        @keyframes moveUp {
+            from { transform: translateY(100vh); }
+            to { transform: translateY(-10vh); }
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 { color: #00d2ff; margin-bottom: 30px; font-size: 2rem; }
+
+        /* Style Kotak Foto */
+        .photo-item {
+            margin-bottom: 35px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .photo-item img {
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .caption {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Tombol Back */
+        .btn-back {
+            display: inline-block;
+            margin: 40px 0;
+            padding: 15px 45px;
+            background: linear-gradient(45deg, #ff9a9e, #a1c4fd);
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 5px 20px rgba(161, 196, 253, 0.4);
+            transition: 0.3s;
+        }
+
+        .btn-back:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body>
+
+    <div class="stars-container">
+        <div class="star" style="width:2px; height:2px; left:10%; animation-duration:8s;"></div>
+        <div class="star" style="width:3px; height:3px; left:40%; animation-duration:12s;"></div>
+        <div class="star" style="width:1px; height:1px; left:70%; animation-duration:10s;"></div>
+        <div class="star" style="width:2px; height:2px; left:90%; animation-duration:15s;"></div>
+    </div>
+
+    <div class="container">
+        <h1>NZK - Galeri</h1>
+
+        <div class="photo-item">
+            <img src="gintung1.jpg" alt="Pemandangan">
+            <div class="caption">Foto di situ Gintung pagi hari</div>
+        </div>
+
+        <div class="photo-item">
+            <img src="gintung2.jpg" alt="Pemandangan">
+            <div class="caption">Foto di situ Gintung pagi hari</div>
+        </div>
+
+        <div class="photo-item">
+            <img src="gintung3.jpg" alt="Pemandangan">
+            <div class="caption">Foto di situ Gintung sore hari</div>
+        </div>
+
+        <div class="photo-item">
+            <img src="gintung4.jpg" alt="Pemandangan">
+            <div class="caption">Foto di situ Gintung pagi hari</div>
+        </div>
+
+        <div class="photo-item">
+            <img src="cibubur1.jpg" alt="Pemandangan">
+            <div class="caption">Foto Saya di Cibubur pagi hari</div>
+        </div>
+
+        <div class="photo-item">
+            <img src="cibubur2.jpg" alt="Pemandangan">
+            <div class="caption">Foto Saya di Cibubur pagi hari</div>
+        </div>
+
+        <a href="index.html" class="btn-back">BACK TO HOME</a>
+    </div>
+
+</body>
+</html>
